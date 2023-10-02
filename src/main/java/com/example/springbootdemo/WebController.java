@@ -22,7 +22,7 @@ public class WebController {
 
     @PostMapping("/saveemployee")
     public String saveEmployee(@RequestBody Employee employee){
-        String s = employeeService.saveEmployee(employee);
-        return s;
+        String result = employeeService.saveEmployee(employee);
+        return result;
     }
 }
